@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- HTML5 belgesi olarak tarayıcıya bilgi verir. -->
+<html lang="en"> <!-- Sayfanın dilini İngilizce olarak ayarlar. -->
+  <head>
+    <meta charset="UTF-8" /> <!-- Sayfanın karakter setini UTF-8 olarak ayarlar. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Internet Explorer'a en son sürümü kullanmasını belirtir. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Mobil uyumlu görünüm için viewport ayarları. -->
+    <title>Coffee Addict</title> <!-- Tarayıcı sekmesinde görünen sayfanın başlığı. -->
+    <link rel="stylesheet" href="main.css" /> <!-- CSS stil dosyasını (main.css) sayfaya dahil eder. -->
+  </head>
+  <body>
+    <header> <!-- Sayfanın başlık kısmı. -->
+      <div class="logo-container"> <!-- Logo ve başlık için kapsayıcı. -->
+        <img
+          src="https://makdagist1.github.io/coffeeaddict/images/logo.png"
+          alt="Kahve fincanı" 
+          id="logo" 
+        />
+        <h1>Coffee Addict V2</h1> <!-- Sayfanın ana başlığı. -->
+      </div>
+      <nav> <!-- Navigasyon menüsünü tanımlar. -->
+        <ul> <!-- Sırasız liste başlatır. -->
+          <li><a href="#home">Home</a></li> <!-- Ana sayfaya bağlantı. -->
+          <li><a href="#about">About</a></li> <!-- Hakkında sayfasına bağlantı. -->
+          <li><a href="#products">Products</a></li> <!-- Ürünler sayfasına bağlantı. -->
+          <li><a href="#contact">Contact</a></li> <!-- İletişim sayfasına bağlantı. -->
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home"> <!-- Sayfanın ana içeriği. -->
+      <section id="hero"> <!-- Kahraman (hero) bölümü. -->
+        <img
+          src="https://makdagist1.github.io/coffeeaddict/images/background.jpeg" 
+          alt="Kahve Resmi" 
+        /> <!-- Ürün resmi ve açıklaması. -->
+        <h2>Welcome to Coffee Heaven</h2> <!-- İkinci seviyede başlık. -->
+        <p>Discover the best coffee blends from around the world.</p> <!-- Bilgilendirici metin. -->
+      </section>
+
+      <section id="products"> <!-- Ürünlerin tanıtıldığı bölüm. -->
+        <h2>Featured Products</h2> <!-- Bu bölümün başlığı. -->
+        <div class="product-grid"> <!-- Ürünleri tutacak konteyner. -->
+          <article class="product"> <!-- Her bir ürün için alan. -->
+            <h3>House Blend Coffee</h3> <!-- Ürün başlığı. -->
+            <img
+              src="https://makdagist1.github.io/coffeeaddict/images/house-blend.jpeg" 
+              alt="Sıcak Kahve Kupası" 
+            />  <!-- Ürün resmi ve açıklaması. -->
+            <p>A rich, balanced blend of beans that create the perfect cup of coffee.</p> <!-- Ürün açıklaması. -->
+            <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">Details</a> <!-- Ürün için daha fazla bilgi bağlantısı. -->
+          </article>
+
+          <article class="product"> <!-- İkinci ürün alanı. -->
+            <h3>French Roast</h3> <!-- Ürün başlığı. -->
+            <img
+              src="https://makdagist1.github.io/coffeeaddict/images/french-roast.jpeg"
+              alt="Filtre Kahve" 
+            /> <!-- Ürün resmi ve açıklaması. -->
+            <p>A bold and smoky flavor that brings out the best in French roast beans.</p> <!-- Ürün açıklaması. -->
+            <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">Details</a> <!-- Ürün için daha fazla bilgi bağlantısı. -->
+          </article>
+
+          <article class="product"> <!-- Üçüncü ürün alanı. -->
+            <h3>Colombian Roast</h3> <!-- Ürün başlığı. -->
+            <img
+              src="https://makdagist1.github.io/coffeeaddict/images/columbian-roast.jpeg"
+              alt="Espresso" 
+            /> <!-- Ürün resmi ve açıklaması. -->
+            <p>Enjoy the smooth, nutty flavor of premium Colombian beans.</p> <!-- Ürün açıklaması. -->
+            <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">Details</a> <!-- Ürün için daha fazla bilgi bağlantısı. -->
+          </article>
+        </div> <!-- Ürünleri tutacak konteyner sonu -->
+      </section>
+    </main>
+
+    <footer> <!-- Sayfanın alt kısmı. -->
+      <p>Copyright ©2024 Coffee Addict</p> <!-- Telif hakkı bilgisi. -->
+      <a href="#home">Back to Top</a> <!-- Sayfanın en üstüne dönmek için bağlantı. -->
+    </footer>
+  </body>
+</html>

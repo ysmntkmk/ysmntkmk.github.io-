@@ -1,0 +1,193 @@
+/* Tüm elementler için varsayılan margin ve padding değerlerini sıfırlıyoruz. */
+* {
+  margin: 0; /* Tüm elementlerin dış boşluğunu sıfırlıyoruz. */
+  padding: 0; /* Tüm elementlerin iç boşluğunu sıfırlıyoruz. */
+  box-sizing: border-box; /* Boyut hesaplamalarında padding ve border'ı da dikkate alıyoruz. */
+}
+
+/* Genel body stili */
+body {
+  font-family: "Arial", sans-serif; /* Yazı tipini belirliyoruz. */
+  background-color: #f4f4f4; /* Arka plan rengini ayarlıyoruz. */
+  line-height: 1.6; /* Satır yüksekliğini ayarlayarak okunabilirliği artırıyoruz. */
+}
+
+/* Header stili */
+header {
+  background-color: #6f4e37; /* Header arka plan rengini belirliyoruz. */
+  color: #fff; /* Yazı rengini beyaz yapıyoruz. */
+  padding: 20px 0; /* Dikey padding ekliyoruz. */
+  text-align: center; /* İçeriği ortalıyoruz. */
+}
+
+/* Logo konteyneri için stil */
+.logo-container {
+  display: flex; /* Flexbox kullanarak yan yana yerleştiriyoruz. */
+  justify-content: center; /* Ortalamak için içerikleri merkeziyoruz. */
+  align-items: center; /* Dikeyde ortalamak için. */
+  gap: 20px; /* Logo ve başlık arasında boşluk bırakıyoruz. */
+}
+
+/* Logo resmi boyutlandırma */
+#logo {
+  width: 80px; /* Logo genişliği. */
+  height: 80px; /* Logo yüksekliği. */
+}
+
+/* Navigasyon menüsü stilleri */
+nav ul {
+  display: flex; /* Flexbox ile yatay sıralama. */
+  justify-content: center; /* Ortalamak için. */
+  list-style: none; /* Noktasız liste. */
+  gap: 20px; /* Menü elemanları arasında boşluk. */
+  margin-top: 10px; /* Menü ile header arasına boşluk. */
+}
+
+/* Menü bağlantı stilleri */
+nav ul li a {
+  color: #fff; /* Bağlantı rengi. */
+  text-decoration: none; /* Alt çizgi yok. */
+  font-weight: bold; /* Kalın yazı. */
+  padding: 10px 20px; /* İç boşluk. */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti. */
+}
+
+/* Menü bağlantılarının üzerine gelindiğinde stil */
+nav ul li a:hover {
+  background-color: #fff; /* Arka plan rengi beyaz. */
+  color: #6f4e37; /* Yazı rengi koyu kahverengi. */
+  border-radius: 5px; /* Kenar yuvarlama. */
+}
+
+/* Hero bölüm stilleri */
+#hero {
+  background-image: url("https://makdagist1.github.io/coffeeaddict/images/background.jpeg"); /* Arka plan resmi. */
+  background-size: cover; /* Resmi kapsama ayarı. */
+  background-position: center; /* Arka plan resmini ortala. */
+  padding: 100px 20px; /* Dikey ve yatay padding. */
+  text-align: center; /* İçeriği ortalama. */
+  color: #fff; /* Yazı rengini beyaz. */
+}
+
+/* Hero başlık stilleri */
+#hero h2 {
+  font-size: 3rem; /* Başlık boyutu. */
+  margin-bottom: 20px; /* Başlık ile diğer içerikler arasına boşluk. */
+}
+
+/* Hero paragraf stilleri */
+#hero p {
+  font-size: 1.2rem; /* Paragraf yazı boyutu. */
+}
+
+/* Ürünler bölümü stilleri */
+#products {
+  padding: 40px 20px; /* Dikey ve yatay padding. */
+  background-color: #e6e2dc; /* Arka plan rengi. */
+  max-width: 1200px; /* Maksimum genişlik. */
+  margin: 0 auto; /* Ortalamak için. */
+}
+
+/* Ürünler başlığı stilleri */
+#products h2 {
+  text-align: center; /* Başlığı ortalama. */
+  color: #6f4e37; /* Yazı rengi. */
+  margin-bottom: 40px; /* Başlık ile diğer içerikler arasında boşluk. */
+}
+
+/* Ürünlerin yerleştirilmesi için grid düzeni */
+.product-grid {
+  display: flex; /* Flex düzeni. */
+  justify-content: center; /* Ürünleri ortalamak için. */
+  flex-wrap: wrap; /* Taşma durumunda yeni satıra geç. */
+}
+
+/* Her bir ürünün stilleri */
+.product {
+  background-color: #fff; /* Ürün arka plan rengi. */
+  padding: 20px; /* İç boşluk. */
+  border-radius: 10px; /* Kenar yuvarlama. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti. */
+  transition: box-shadow 0.3s, transform 0.3s; /* Geçiş efekti. */
+  text-align: center; /* İçeriği ortala. */
+  width: calc(
+    33.333% - 40px
+  ); /* Ürün genişliği, 3 ürün yan yana olacak şekilde. */
+  margin: 20px; /* Ürünler arasında boşluk. */
+}
+
+/* Ürün üzerine gelindiğinde stil */
+.product:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gölge efekti artışı. */
+  transform: translateY(-5px); /* Yükselme efekti. */
+}
+
+/* Ürün resimleri için stil */
+.product img {
+  width: 100%; /* Resmi kapsama. */
+  height: auto; /* Yüksekliği otomatik ayarla. */
+  border-radius: 10px; /* Kenar yuvarlama. */
+  margin-bottom: 15px; /* Resim ile altındaki içerik arasında boşluk. */
+}
+
+/* Ürün başlıkları için stil */
+.product h3 {
+  color: #6f4e37; /* Başlık rengi. */
+  margin-bottom: 10px; /* Başlık ile içerik arasında boşluk. */
+}
+
+/* Ürün açıklamaları için stil */
+.product p {
+  color: #555; /* Açıklama rengi. */
+  margin-bottom: 15px; /* Açıklama ile bağlantı arasında boşluk. */
+}
+
+/* Ürün bağlantıları için stil */
+.product a {
+  text-decoration: none; /* Alt çizgi yok. */
+  color: #6f4e37; /* Bağlantı rengi. */
+  font-weight: bold; /* Kalın yazı. */
+  transition: color 0.3s; /* Geçiş efekti. */
+}
+
+/* Ürün bağlantılarının üzerine gelindiğinde stil */
+.product a:hover {
+  color: #d4a373; /* Renk değişimi. */
+}
+
+/* Footer stilleri */
+footer {
+  background-color: #6f4e37; /* Arka plan rengi. */
+  color: #fff; /* Yazı rengi beyaz. */
+  padding: 20px; /* İç boşluk. */
+  text-align: center; /* İçeriği ortala. */
+}
+
+/* Footer bağlantıları için stil */
+footer a {
+  color: #fff; /* Bağlantı rengi. */
+  text-decoration: none; /* Alt çizgi yok. */
+  font-weight: bold; /* Kalın yazı. */
+  transition: color 0.3s; /* Geçiş efekti. */
+}
+
+/* Footer bağlantılarının üzerine gelindiğinde stil */
+footer a:hover {
+  color: #d4a373; /* Renk değişimi. */
+}
+
+/* Ekran boyutu 1024px ve altındaki cihazlar için stil */
+@media (max-width: 1024px) {
+  .product {
+    width: calc(
+      50% - 20px
+    ); /* İki ürün yan yana olacak şekilde genişliği ayarlıyoruz. */
+  }
+}
+
+/* Ekran boyutu 768px ve altındaki cihazlar için stil */
+@media (max-width: 768px) {
+  .product {
+    width: calc(100% - 20px); /* Tek ürün genişliği. */
+  }
+}
